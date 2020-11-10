@@ -1,0 +1,37 @@
+body {
+    background-color: #ffffe6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 10px 0 10px; /*aici nu am reusit sa mut meniul mai sus, probabil din cauza tabelului*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.leftie {
+    border-right: 1px solid black;
+}
+
+.rightie {
+    padding: 20px;
+    text-align: left;
+}
+
+img {
+    margin: 0 auto;  /*aici nu am reusit sa pun imaginea in centru*/
+}
+
+.boldtext {
+    font-weight: 700;
+    padding: 10px 20px 10px 0; /*aici am incercat sa mai pun niste spatiu intre randuri dar nu a mers*/
+}
+
+.normaltext {
+    font-weight: 100;
+}

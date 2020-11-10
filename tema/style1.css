@@ -1,0 +1,9 @@
+.leftmenu {
+    float: left;
+    display: inline;
+}
+.rightmenu {
+    float:right;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
