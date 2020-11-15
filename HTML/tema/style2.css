@@ -1,5 +1,6 @@
 body {
     background-color: #ffffe6;
+    max-width: 200px;
 }
 
 ul {
@@ -8,6 +9,7 @@ ul {
 
 ul li {
     padding: 10px 10px 0 10px; /*aici nu am reusit sa mut meniul mai sus, probabil din cauza tabelului*/
+    vertical-align: top;
 }
 
 a {
