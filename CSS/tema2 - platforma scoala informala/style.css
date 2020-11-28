@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+    padding: 0;
+}
+
+.top_bar {
+    height: 42px;
+    background-color: white;
+}
+
+.left_side {
+    display: inline-block;
+    float: left;
+}
+
+.right_side {
+    display: inline-block;
+    float: right;
+}
+
+.menu_item {
+    padding: 10px;
+    font-size: 18px;
+}
+/*aici se termina bara de sus*/
+
+.middle_section {
+    display: flex;
+}
+
+.left_menu {
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    width: 220px;
+    height: 300px;
+    flex-direction: column;
+}
+
+.button {
+    height: 50px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    text-align: center;
+    color: #7512af;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.button:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.button a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.right_menu {
+    background-color: white;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    margin: 10px 10px 0 0;
+    border: 1px solid grey;
+}
+
+.logo {
+    display: inline-block;
+    width: 98%;
+    height: 180px;
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+.second_part {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.third_part {
+    flex: 6
+}
+
+.news_title {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 0;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.news a{
+    text-align: right;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.anunt {
+    display: flex;
+}
+
+.anunt_icon {
+    font-size: 46px;
+}
+
+.anunt h5 {
+    display: inline-block;
+    margin: 0;
+    width: 70%;
+    padding: 1px;
+}
+
+.anunt p {
+    display: inline-block;
+    margin: 0;
+    padding: 1px;
+}
+
+.cutie {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.fourth_part {
+    display: flex;
+    flex-direction: column;
+    flex: 4
+}

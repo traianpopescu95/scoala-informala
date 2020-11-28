@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/*bara de sus*/
+.topBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(43, 43, 43);
+}
+
+/*partea stanga*/
+
+.topBarItem {
+    height: 100%;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.topBarItem:hover {
+    cursor: pointer;
+    background-color: rgb(70, 70, 70);
+}
+
+.topBarItem img {
+    height: 35px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.searchBox {
+    height: 100%;
+}
+
+.userMenu{
+    height: 100%;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+    padding: 27px;
+}
+
+/*mijloc*/
+
+.searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.searchBox input {
+    background-color: black;
+    border: 0;
+    color: white;
+    width: 600px;
+    height: 30px;
+}
+
+.searchIcon {
+    color: white;
+    width: 70px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: rgb(70, 70, 70);
+}
+
+.searchIcon a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*user menu(dreapta)*/
+.userMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+/*bara stanga + video-uri sub bara de sus*/
+
+.underTopBar {
+    display: flex;
+}
+
+/*bara stanga*/
+
+.sideBar {
+    height: 100%;
+    width: 6%;
+    position: fixed;
+    top: 70px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarItem {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 13px;
+    padding: 3px;
+}
+
+.sideBarItem:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.iconLeft {
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+}
+
+/*MAIN CONTAIER ( videos )*/
+
+.mainContainer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 70px 0 0 75px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    overflow: auto;
+}
+
+.videoItem {
+    height: 50%;
+    width: 24%;
+    padding: 10px;
+}
+
+.videoInfo {
+    display: flex;
+    width: 92%;
+}
+
