@@ -44,31 +44,56 @@ function suma(n) {
 
 //6
 function prim(n) {
-    let divizor=0;
-    for(let i=1;i<=n;i++) {
+    for(let i=2;i<=n/2;i++) {
         if(n%i==0) {
-            divizor++;
+            return false;
         }
     }
-    if (divizor<3) {
-        return true;
-    }
-    else return false;
+    return true;
 }
 
 //7
 function sumaPrime(n) {
-    let array = [];
-    for (let i=1 ; array.length <= n ; i++) {
-        
+    let count = 0;
+    let sum = 0;
+    let i = 2;
+    while (count<n){
+        if(prim(i)) {
+            sum += i;
+            count++;
+        }
+        i++;
     }
+    return sum;
 }
 
 //8
-function invers  
+function invers(n){
+    let rezultat=0;
+    let cifra;
+    while(n>0){
+        cifra = n%10;
+        rezultat = rezultat*10 + cifra;
+        n= parseInt(n/10); 
+    }
+    return rezultat;
 }
 
 //9
+function produsImpare(n) {
+    let p = 1;
+    let count = 0;
+    let i = 1;
+    while(count<n) {
+        if(i%2==1){
+            p=p*i;
+            count++;
+        }
+        i++;
+    }
+    return p;
+}
+
 
 //10
 function contains(arr,x) {
@@ -132,5 +157,13 @@ function produsPozitive(arr) {
 }
 
 //15
-function palindrom
-
+function palindrom(str){
+    let invers="";
+    for (let i=str.length-1;i>=0;i--){
+        invers += str[i];
+    }
+    if(str === invers){
+        return true;
+    }
+    else return false;
+}
