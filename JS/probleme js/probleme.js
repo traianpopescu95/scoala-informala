@@ -65,6 +65,18 @@ function guess() {
     document.write("Da tu un refresh te rog pana invat eu cum sa pun buton pentru asta");
 }
 
+//Write a program that asks the user for a number n and gives them the possibility to choose between computing the sum and computing the product of 1,…,n.
+function sumOrProd() {
+    let n = document.querySelector("#sumOrProd").value;
+    let s=0;
+    let p=1;
+    for(let i=1;i<=n;i++) {
+        s += i;
+        p *= i;
+    }
+
+    document.querySelector("h4").innerHTML = "Suma este " + s + ". Produsul este " + p + "."; 
+}
 
 function fiz(n) {
     let arr="";
@@ -131,3 +143,39 @@ function div7(x){
 
 
 console.log(bolt(30));
+
+let lista = ["dasndasds", "dasdsadsa", "213123"];
+
+//completeaza html
+function draw() {
+    let str = "";
+    for (let i = 0; i <= lista.length - 1; i++) {
+        str += `
+            <li>${lista[i]}</li>
+        `;
+    }
+
+    let listaMea = document.querySelector("ul");
+    listaMea.innerHTML = str;
+}
+
+
+//adauga element in lista[]
+function add() {
+    let input = document.querySelector("input");
+    let val = input.value;
+    if (val !== "") {
+        lista.push(val);
+    }
+    draw();
+    input.value = "";
+}
+
+//afiseaza suma a 2 inputuri
+function sum() {
+    let val1 = document.querySelector("#nr1").value;
+    let val2 = document.querySelector("#nr2").value;
+
+    let htmlMeu = document.querySelector("p");
+    htmlMeu.innerHTML = parseInt(val1) + parseInt(val2);
+}

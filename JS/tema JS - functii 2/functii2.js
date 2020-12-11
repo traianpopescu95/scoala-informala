@@ -1,38 +1,3 @@
-let lista = ["dasndasds", "dasdsadsa", "213123"];
-
-//completeaza html
-function draw() {
-    let str = "";
-    for (let i = 0; i <= lista.length - 1; i++) {
-        str += `
-            <li>${lista[i]}</li>
-        `;
-    }
-    let listaMea = document.querySelector("ul");
-    listaMea.innerHTML = str;
-}
-
-
-//adauga element in lista[]
-function add() {
-    let input = document.querySelector("input");
-    let val = input.value;
-    if (val !== "") {
-        lista.push(val);
-    }
-    draw();
-    input.value = "";
-}
-
-//afiseaza suma a 2 inputuri
-function sum() {
-    let val1 = document.querySelector("#nr1").value;
-    let val2 = document.querySelector("#nr2").value;
-
-    let htmlMeu = document.querySelector("p");
-    htmlMeu.innerHTML = parseInt(val1) + parseInt(val2);
-}
-
 //TEMA 2 JS
 //1
 function getDigits(str) {
@@ -157,4 +122,94 @@ function palindrom(n) {
         return true;
     }
     else return false;
+}
+
+//12
+function sort(arr) {
+    let k; //variabila de pastrare
+    let final = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                k = arr[i];
+                arr[i] = arr[j];
+                arr[j] = k;
+            }
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            final.push(arr[i]);
+        }
+    }
+    return final;
+}
+
+//13
+function sortAscDesc(arr) {
+    let k;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] % 2 === 0 && arr[j] % 2 === 0) {
+                if (arr[i] > arr[j]) {
+                    k = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = k;
+                }
+            }
+            if (arr[i] % 2 !== 0 && arr[j] % 2 !== 0) {
+                if (arr[i] < arr[j]) {
+                    k = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = k;
+                }
+            }
+            if (arr[i] % 2 !== 0 && arr[j] % 2 === 0) {
+                k = arr[i];
+                arr[i] = arr[j];
+                arr[j] = k;
+            }
+        }
+    }
+    return arr;
+}
+
+//14
+function binarySearch(arr, n) {
+    sort(arr);
+    let start = 0;
+    let end = arr.length - 1;
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2)
+        if (arr[mid] === n) {
+            return true;
+        }
+        else if (arr[mid] < n) {
+            start = mid + 1;
+        }
+        else end = mid - 1;
+    }
+    return false;
+}
+
+//15
+function countBinarySearch(arr, n) {
+    sort(arr);
+    let count = 0;
+    let start = 0;
+    let end = arr.length - 1;
+    while (start <= end) {
+        count++;
+        let mid = Math.floor((start + end) / 2)
+        if (arr[mid] === n) {
+            return count;
+        }
+        else {
+            if (arr[mid] < n)
+                start = mid + 1;
+            else
+                end = mid - 1;
+        }
+    }
+    return count;
 }
