@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body onload="draw();">
+    <div class="smartphone">
+        <div class="upperPhonePart">
+            <div class="receptor"></div>
+            <div class="camera"></div>
+        </div>
+
+        <div class="form">
+            <div class="fields">
+                <span>Name</span>
+                <span>Phone number</span>
+            </div>
+            <div class="inputs">
+                <input onkeypress="limitTyping1(event);checkKey(event);" type="text" name="nume"/>
+                <input onkeypress="limitTyping2(event);checkKey(event);" type="tel" name="numar"/>
+            </div>
+        </div>
+
+        <img onclick="addContact();edit2();" class="image" src="add.jpg"/>
+
+        <div class="contacts">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

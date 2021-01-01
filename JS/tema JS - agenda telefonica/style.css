@@ -1,0 +1,73 @@
+body {
+    font-family: "Brush Script MT", cursive;
+}
+
+.smartphone {
+    margin: 20px 0 0 50px;
+    width: 300px;
+    height: 550px;
+    border: 5px inset rgb(0, 0, 126);
+    border-radius: 20px;
+    background-image: url("background.jpg")
+}
+
+.upperPhonePart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.receptor {
+    width: 35px;
+    height: 2px;
+    border: 3px solid black;
+    background-color: black;
+    margin: 10px 0 10px 124px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.camera {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: rgb(54, 53, 53);
+    display: inline-block;
+    margin-left: 115px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.fields, .inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+input {
+    margin: 2px;
+    background-color: #90EE90;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.image {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.contacts {
+    margin: 20px 0 0 15px;
+}
+
+th, td { 
+    text-align: left;
+    padding: 5px;
+}
