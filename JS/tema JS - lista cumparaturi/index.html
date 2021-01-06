@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8121188418.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js"></script>
+</head>
+
+<body onload="draw();">
+  <div class="paper">
+    <div class="title">Lista de cumparaturi</div>
+
+    <div class="input">
+      <input type="text" onkeypress="checkKey(event)" name="input"/>
+      <span onclick = "addItem();" id="addBtn">Adauga</span>
+    </div>
+
+    <div class="sorting">
+      <span>Sorteaza</span>
+      <i onclick="sortDesc();" class="fas fa-arrow-down"></i>
+      <i onclick="sortAsc();" class="fas fa-arrow-up"></i>
+    </div>
+    
+    <div class="items">
+
+    </div>
+
+  </div>
+</body>
+
+</html>

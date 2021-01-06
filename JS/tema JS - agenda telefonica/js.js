@@ -69,7 +69,7 @@ function limitTyping2(event) {
 
 function checkKey(event) {
     if (event.which === 13) {
-        if(indexEditare === -1){
+        if (indexEditare === -1) {
             addContact();
         }
         else edit2();
