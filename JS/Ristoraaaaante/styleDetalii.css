@@ -1,0 +1,27 @@
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(86, 177, 177);
+}
+
+h1 {
+    text-align: center;
+}
+
+#slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#slideshow > button {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid black;
+    border-style: outset;
+}
+
+#slideshow > img {
+    max-height: 250px;
+}

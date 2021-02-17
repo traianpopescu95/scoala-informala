@@ -1,0 +1,83 @@
+.container {
+    max-width: 1000px;
+    background-color: #E6E6FA;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search input {
+    width: 700px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #191970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.detailsContainer {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.now {
+    padding: 10px 10px 10px 0;
+}
+
+#map {
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+
+  .forecastContainer {
+      width: 100%;
+      height: 900px;
+      border-top: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+ .header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+  }
+
+.header span {
+    width: 20%;
+    font-weight: 700;
+}
+
+  .meteo {
+    width: 1000px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+  .hourly3 {
+    display: flex;
+    flex-direction: column;
+    height: 12.5%;
+    width: 20%;
+}
+
+
+.cloudy {
+    width: 50px;
+}

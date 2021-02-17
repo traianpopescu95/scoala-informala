@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weatherapp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="search">
+            <input type="text" />
+            <button onclick="getWeatherNow();">Show Weather Now</button>
+            <button onclick="getForecast();">Show Forecast</button>
+        </div>
+
+        <div class="now">
+            <h4>Weather Now</h4>
+            <div class="detailsContainer">
+                <div class="now">
+                    <img id="weather" src="" />
+                    </br>
+                    <span class="bold">Description:&nbsp;</span>
+                    <span id="descriere"></span>
+                    </br>
+                    <span class="bold">Humidity :&nbsp;</span>
+                    <span id="umiditate"></span>
+                    </br>
+                    <span class="bold">Pressure:&nbsp;</span>
+                    <span id="presiune"></span>
+                    </br>
+                    <span class="bold">Current temperature:&nbsp;</span>
+                    <span id="temperatura"></span>
+                    </br>
+                    <span class="bold">Today's low:&nbsp;</span>
+                    <span id="min"></span>
+                    </br>
+                    <span class="bold">Today's high:&nbsp;</span>
+                    <span id="max"></span>
+                </div>
+                <!--https://google-map-generator.com/-->
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="603" height="329" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 329px;
+                                width: 603px;
+                            }
+                        </style><a href="https://google-map-generator.com">google map widget for website</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 329px;
+                                width: 603px;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h4>5 Days Forecast</h4>
+            <div class="forecastContainer">
+                <div class="header">
+                    <span id="first"></span>
+                    <span id="second"></span>
+                    <span id="third"></span>
+                    <span id="forth"></span>
+                    <span id="fifth"></span>
+                </div>
+                <div class="meteo"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

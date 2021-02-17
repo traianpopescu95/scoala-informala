@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loaderStyle.css">
+
+  <link rel="stylesheet" href="details.css">
+  <title>Product Details</title>
+</head>
+
+<body onload="getProduct();">
+  <div class="container">
+    <div class="header">
+      <a href="home.html">
+        <p>rarekicks</p>
+      </a>
+      <a href="basket.html">
+        <div class="basket">
+          <span>Basket</span>
+          <img src="basket.png" />
+        </div>
+      </a>
+    </div>
+
+    <div class="alertSuccess hidden">
+      <span class="closebtn" onclick="closeBtn();">&times;</span>
+      <strong id="product"></strong> was added to your basket.
+    </div>
+
+    <div class="alertFailure hidden">
+      <span class="closebtn" onclick="closeBtn2();">&times;</span>
+      <strong>Not enough stocks for the selected product.</strong>
+    </div>
+
+    <div class="main">
+      <div class="loader"></div>
+      <img id="picture" src="" />
+      <div class="details">
+        <h3 id="name"></h3>
+        <span id="price"></span>
+        <div><span id="stock"></span><span>&nbsp;left</span></div>
+        <div><span>Quantity&nbsp;</span><input type="number" id="quantity" /></div>
+        <div>
+          <button onclick="addToCart();" id="buy">ADD</button>
+          <a href="index.html"><button id="back">BACK</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <span>About us</span>
+      <span>Payment & Shipping</span>
+      <span>Privacy Policy</span>
+      <span>Terms & Conditions</span>
+      <span>Return Policy</span>
+    </div>
+  </div>
+
+
+
+  <script src="details.js"></script>
+</body>
+
+</html>

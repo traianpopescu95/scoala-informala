@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="home.css">
+
+    <title>rarekicks - home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="home.html">
+                <p>rarekicks</p>
+            </a>
+            <a href="basket.html">
+                <div class="basket">
+                  <span>Basket</span>
+                  <img src="basket.png" />
+                </div>
+              </a>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <a href="index.html"><img src="homej.jpg" /></a>
+                <a href="index.html"><span id="sneakers">shop - sneakers</span></a>
+            </div>
+
+            <div class="right">
+
+                <!-- Slider main container -->
+                <div class="swiper-container hideSwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="celebs2.JPG" /></div>
+                        <div class="swiper-slide"><img src="home22.jpg" /></div>
+                        <div class="swiper-slide"><img src="home123.jpg" /></div>
+                        <div class="swiper-slide"><img src="home121.jpg" /></div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>About us</span>
+            <span>Payment & Shipping</span>
+            <span>Privacy Policy</span>
+            <span>Terms & Conditions</span>
+            <span>Return Policy</span>
+        </div>
+    </div>
+
+    <!--Swiper Script-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+
+            direction: 'vertical',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            }
+        });
+    </script>
+</body>
+
+</html>

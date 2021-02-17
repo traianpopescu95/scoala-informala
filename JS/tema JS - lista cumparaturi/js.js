@@ -1,13 +1,22 @@
-let iteme = [];
+let iteme = {};
+
+let url = "https://shopping-list-app-dd30c-default-rtdb.europe-west1.firebasedatabase.app/";
+
+async function getIteme() {
+    let response = await fetch(url + ".json")
+    iteme = await response.json();
+    draw();
+}
 
 function draw() {
     let str = "";
-    for (let i = 0; i < iteme.length; i++) {
-        if (iteme[i].checked === false) {
+    //for (let i = 0; i < iteme.length; i++) {
+    for(let [i, item] of Object.entries(iteme)){
+        if (item.checked === false) {
             str += `
                 <div class="newItem">
                     <img class="bullet" src="bullet.png"/>
-                    <span class="item">${iteme[i].nume}</span>
+                    <span class="item">${item.nume}</span>
                     <i onclick="check(${i});" class="fas fa-check checked"></i>
                 </div>
             `
@@ -15,7 +24,7 @@ function draw() {
         else str += `
             <div class="newItem">
                 <img class="bullet" src="bullet.png"/>
-                <span class="item striked">${iteme[i].nume}</span>
+                <span class="item striked">${item.nume}</span>
                 <i onclick="check(${i});" class="fas fa-check checked"></i>
             </div>
         `
@@ -23,13 +32,20 @@ function draw() {
     document.querySelector(".items").innerHTML = str;
 }
 
-function addItem() {
+async function addItem() {
     let newItem = document.querySelector("[name='input']").value;
-    iteme.push({
+    let newObject = {
         "nume": newItem,
         "checked": false
+    };
+
+    await fetch(url + ".json", {
+        method: "POST",
+        body: JSON.stringify(newObject),
+        headers: {"Content-Type": "application/json"}
     });
-    draw();
+
+    getIteme();
     document.querySelector("[name='input']").value = "";
 }
 

@@ -1,0 +1,24 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4);
+    margin: 10px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+}
+
+.menu-item > img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.menu-description {
+    flex: 1;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}

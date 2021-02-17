@@ -1,0 +1,16 @@
+.produs {
+    height: 300px;
+    width: 90%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 300px;
+}
+
+.hidden {
+    display: none !important;
+}

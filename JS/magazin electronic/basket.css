@@ -1,0 +1,124 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Garamond, serif;
+}
+
+.header {
+    height: 25px;
+    padding: 18px;
+    background-color: #292927;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p {
+    display: inline;
+    color: #f44336;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.header a,.header a:hover,.header a:visited,.header a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+}
+
+.basket span {
+    color: #E8E8E8;
+    font-size: 16px;
+    padding: 2px;
+    font-weight: 200;
+}
+
+.basket span:hover {
+    color: #f44336;
+}
+
+.basket img {
+    width: 25px;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 700px;
+    height: 400px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#basket{
+    border-collapse: collapse;
+}
+
+#basket td, #basket th {
+    padding: 8px;
+}
+
+#basket tr:nth-child(even){background-color: #f2f2f2;}
+
+#basket tr:hover {background-color: #ddd;}
+
+#basket th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008C45;
+    color: white;
+}
+
+#basket td a{
+    text-decoration: none;
+}
+
+
+#name img {
+    width: 50px;
+    padding: 5px;
+}
+
+#name {
+    display: flex;
+    align-items:center;
+}
+
+#flex button {
+    border: none;
+    background-color: inherit;
+    cursor:pointer;
+}
+
+
+#remove {
+    cursor: pointer;
+}
+
+#remove img {
+    width: 28px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 150px;
+    height: 40px;
+    width: 100%;
+    background-color: #292927;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer span {
+    cursor: pointer;
+}
