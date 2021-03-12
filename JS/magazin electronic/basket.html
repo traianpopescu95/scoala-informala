@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loaderStyle.css">
   <title>Basket</title>
 
+  <link rel="shortcut icon" href="rk.ico">
   <script src="basket.js"></script>
   <link rel="stylesheet" href="basket.css">
 </head>
@@ -17,16 +19,25 @@
       <a href="home.html">
         <p>rarekicks</p>
       </a>
-      <a href="basket.html">
-        <div class="basket">
-          <span>Basket</span>
-          <img src="basket.png" />
-        </div>
-      </a>
+
+      <div class=rightSide>
+        <a href="basket.html">
+          <div class="basket">
+            <span>Basket</span>
+            <img src="basket.png" />
+          </div>
+        </a>
+        <a href="admin.html">
+          <div class="admin">
+            <img src="admin.png" />
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="main">
       <h2>Basket</h2>
+
       <table id="basket">
         <thead>
           <tr>
@@ -38,9 +49,11 @@
           </tr>
         </thead>
         <tbody>
-         
+
         </tbody>
       </table>
+      <button onclick="window.history.go(-1)" id="back">BACK</button>
+      <div class="loader hidden"></div>
     </div>
 
     <div class="footer">

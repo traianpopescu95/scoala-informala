@@ -26,24 +26,39 @@ body {
     color: inherit;
 }
 
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+
 .basket {
     display: flex;
     align-items: center;
 }
 
-.basket span {
+.basket span, .admin span {
     color: #E8E8E8;
     font-size: 16px;
     padding: 2px;
     font-weight: 200;
 }
 
-.basket span:hover {
-    color: #f44336;
-}
 
 .basket img {
     width: 25px;
+}
+
+.admin {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admin img {
+    border-radius: 50%;
+    width: 25px;
+    margin-top: 2px;
 }
 
 .main {
@@ -53,7 +68,7 @@ body {
 }
 
 .left {
-    width: 50%;
+    width: 60%;
     height: 100vh;
 }
 
@@ -113,6 +128,12 @@ body {
 	.hideSwiper {
 		display: none;
 	}
+    .left img{
+        min-width: 800px;
+    }
+    #sneakers {
+        left: 140px;
+    }
 }
 
 .footer {

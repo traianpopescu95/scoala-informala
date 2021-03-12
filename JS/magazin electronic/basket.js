@@ -1,15 +1,16 @@
 let storage = window.localStorage;
-let url = "https://magazin-virtual-default-rtdb.europe-west1.firebasedatabase.app/";
-
+let url = "https://rarekickscom-default-rtdb.europe-west1.firebasedatabase.app/";
 
 async function getBasket() {
+    document.querySelector(".loader").classList.remove("hidden");
     const response = await fetch(url + ".json");
     products = await response.json();
-    console.log(products);
-    console.log(storage);
+
     let str = "";
     for (let i of Object.keys(storage)) {
-
+        if (products[i] === null) {
+            continue;
+        }
         let price = products[i].price.substr(2, 3);
         let qty = storage[i];
         let subtotal = price * qty;
@@ -32,6 +33,7 @@ async function getBasket() {
                 `
     }
     document.querySelector("tbody").innerHTML = str;
+    document.querySelector(".loader").classList.add("hidden");
 }
 
 function decrease(idx) {

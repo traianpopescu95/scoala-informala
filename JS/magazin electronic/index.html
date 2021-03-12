@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="loaderStyle.css">
 
+  <link rel="shortcut icon" href="rk.ico">
   <link rel="stylesheet" href="index.css">
 
   <title>rarekicks.com</title>
@@ -17,12 +18,24 @@
       <a href="home.html">
         <p>rarekicks</p>
       </a>
-      <a href="basket.html">
-        <div class="basket">
-          <span>Basket</span>
-          <img src="basket.png" />
-        </div>
-      </a>
+
+      <div>
+        <img onclick="draw();" id="searchImg" src="search.png"/>
+        <input onkeyup="draw()" id="search" placeholder="Search sneakers" type="text"/>
+      </div>
+      <div class=rightSide>
+        <a href="basket.html">
+          <div class="basket">
+            <span>Basket</span>
+            <img src="basket.png" />
+          </div>
+        </a>
+        <a href="admin.html">
+          <div class="admin">
+            <img src="admin.png" />
+          </div>
+        </a>
+      </div>
     </div>
     <div class="upperPart">
       <div class="siteDescription">

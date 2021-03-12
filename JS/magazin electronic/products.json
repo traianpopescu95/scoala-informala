@@ -1,73 +1,98 @@
-[
-    {
-        "picture" : "dunksb.jpg",
-        "name" : "Dunk SB Low Off White Green",
-        "price" : "$ 250"
-    },
-
-    {
-        "picture" : "sacai.jpg",
-        "name" : "Blazer Mid Sacai Legend Blue",
-        "price" : "$ 300"
-    },
-
-    {
-        "picture" : "af1.jpg",
-        "name" : "Air Force 1 '07 Virgil Abloh Off White",
-        "price" : "$ 230"
-    },
-
-    {
-        "picture" : "vapormax.jpg",
-        "name" : "Air Vapormax FK Off White Virgil",
-        "price" : "$ 330"
-    },
-
-    {
-        "picture" : "dunk.jpg",
-        "name" : "Dunk SB Low Ben & Jerry's",
-        "price" : "$ 290"
-    },
-
-    {
-        "picture" : "jordan1.jpg",
-        "name" : "Air Jordan 1 Retro High Biohack",
-        "price" : "$ 650"
-    },
-
-    {
-        "picture" : "jordan4.jpg",
-        "name" : "Air Jordan 4 Retro Fire Red",
-        "price" : "$ 600"
-    },
-
-    {
-        "picture" : "jordan5.jpg",
-        "name" : "Air Jordan 5 Retro Off White Sail",
-        "price" : "$ 650"
-    },
-    
-    {
-        "picture" : "jordan6.jpg",
-        "name" : "Air Jordan 6 Retro Travis Scott",
-        "price" : "$ 750"
-    },
-    
-    {
-        "picture" : "yeezy500.jpg",
-        "name" : "Yeezy 500 Blush",
-        "price" : "$ 550"
-    },
-
-    {
-        "picture" : "yeezy350.jpg",
-        "name" : "Yeezy Boost 350 V2 Cloud",
-        "price" : "$ 450"
-    },
-
-    {
-        "picture" : "yeezy700.jpg",
-        "name" : "Yeezy Boost 700 V3 Arzareth",
-        "price" : "$ 650"
-    }
-]
+    [
+        {
+            "picture": "dunksb.jpg",
+            "name": "Dunk SB Low Off White Green",
+            "price": "$ 250",
+            "stock": 30
+        },
+        {
+            "picture": "sacai.jpg",
+            "name": "Blazer Mid Sacai Legend Blue",
+            "price": "$ 300",
+            "stock": 30
+        },
+        {
+            "picture": "af1.jpg",
+            "name": "Air Force 1 '07 Virgil Abloh Off White",
+            "price": "$ 230",
+            "stock": 30
+        },
+        {
+            "picture": "dunk.jpg",
+            "name": "Dunk SB Low Ben & Jerry's",
+            "price": "$ 290",
+            "stock": 30
+        },
+        {
+            "picture": "jordan1.jpg",
+            "name": "Air Jordan 1 Retro High Biohack",
+            "price": "$ 650",
+            "stock": 30
+        },
+        {
+            "picture": "jordan4.jpg",
+            "name": "Air Jordan 4 Retro Fire Red",
+            "price": "$ 600",
+            "stock": 30
+        },
+        {
+            "picture": "jordan5.jpg",
+            "name": "Air Jordan 5 Retro Off White Sail",
+            "price": "$ 650",
+            "stock": 30
+        },
+        {
+            "picture": "jordan6.jpg",
+            "name": "Air Jordan 6 Retro Travis Scott",
+            "price": "$ 750",
+            "stock": 30
+        },
+        {
+            "picture": "yeezy500.jpg",
+            "name": "Yeezy 500 Blush",
+            "price": "$ 550",
+            "stock": 30
+        },
+        {
+            "picture": "yeezy350.jpg",
+            "name": "Yeezy Boost 350 V2 Cloud",
+            "price": "$ 450",
+            "stock": 30
+        },
+        {
+            "picture": "991.jpg",
+            "name": "UA Air Rubber Dunk UNC",
+            "price": "$ 320",
+            "stock": 30
+        },
+        {
+            "picture": "992.jpg",
+            "name": "Dunk SB High Doraemon",
+            "price": "$ 280",
+            "stock": 30
+        },
+        {
+            "picture": "993.jpg",
+            "name": "Balenciaga Triple S White Blue",
+            "price": "$ 400",
+            "stock": 30
+        },
+        {
+            "picture": "994.jpg",
+            "name": "Converse Chuck Taylor Off White",
+            "price": "$ 200",
+            "stock": 30
+        },
+        {
+            "picture": "yeezy700.jpg",
+            "name": "Yeezy Boost 700 V3 Arzareth",
+            "price": "$ 650",
+            "stock": 30
+        },
+        {
+            "picture": "vapormax.jpg",
+            "name": "Air Vapormax FK Off White Virgil",
+            "price": "$ 330",
+            "stock": 30
+        }
+    ]

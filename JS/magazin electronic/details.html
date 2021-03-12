@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="loaderStyle.css">
 
+  <link rel="shortcut icon" href="rk.ico">
   <link rel="stylesheet" href="details.css">
   <title>Product Details</title>
 </head>
@@ -17,12 +18,20 @@
       <a href="home.html">
         <p>rarekicks</p>
       </a>
-      <a href="basket.html">
-        <div class="basket">
-          <span>Basket</span>
-          <img src="basket.png" />
-        </div>
-      </a>
+
+      <div class=rightSide>
+        <a href="basket.html">
+          <div class="basket">
+            <span>Basket</span>
+            <img src="basket.png" />
+          </div>
+        </a>
+        <a href="admin.html">
+          <div class="admin">
+            <img src="admin.png" />
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="alertSuccess hidden">
@@ -34,22 +43,26 @@
       <span class="closebtn" onclick="closeBtn2();">&times;</span>
       <strong>Not enough stocks for the selected product.</strong>
     </div>
-
+    
+    <div class="tabs">
+      <button onclick="changeTab(this,0);" class="buttonActive"><img src="shoe.png"/>Overview</button>
+      <button onclick="changeTab(this,1);"><img src="info.png"/>Product Details</button>
+    </div>
     <div class="main">
       <div class="loader"></div>
       <img id="picture" src="" />
       <div class="details">
         <h3 id="name"></h3>
         <span id="price"></span>
-        <div><span id="stock"></span><span>&nbsp;left</span></div>
-        <div><span>Quantity&nbsp;</span><input type="number" id="quantity" /></div>
-        <div>
+        <div class="stock"><span id="stock"></span><span>&nbsp;left</span></div>
+        <div class="quantity"><span>Quantity&nbsp;</span><input type="number" id="quantity" /></div>
+        <div class="extra hidden">Old meets new on this shoe model. Up top, this comes plastered with big, bold branding and a large Logo on the midsole. Speaking of midsole, underfoot is where you'll be able to notice the real difference with newly embedded React technology. The drop-in footbed provides a mattress of springy cushioning that'll make your jaunts around the city much more comfortable.</div>
+        <div class="more">
           <button onclick="addToCart();" id="buy">ADD</button>
-          <a href="index.html"><button id="back">BACK</button></a>
+          <button onclick="window.history.go(-1)" id="back">BACK</button>
         </div>
       </div>
     </div>
-
 
     <div class="footer">
       <span>About us</span>

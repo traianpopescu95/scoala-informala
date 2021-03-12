@@ -5,6 +5,10 @@ body {
     font-family: Garamond, serif;
 }
 
+.hidden {
+    display: none;
+}
+
 .header {
     height: 25px;
     padding: 18px;
@@ -26,35 +30,51 @@ body {
     color: inherit;
 }
 
+.rightSide {
+    display: flex;
+    align-items: center;
+}
+
 .basket {
     display: flex;
     align-items: center;
 }
 
-.basket span {
+.basket span, .admin span {
     color: #E8E8E8;
     font-size: 16px;
     padding: 2px;
     font-weight: 200;
 }
 
-.basket span:hover {
-    color: #f44336;
-}
 
 .basket img {
     width: 25px;
 }
 
+.admin {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admin img {
+    border-radius: 50%;
+    width: 25px;
+    margin-top: 2px;
+}
+
 .main {
     margin: 0 auto;
+    min-height: 400px;
     max-width: 700px;
     height: 400px;
-    border-bottom: 1px solid grey;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 #basket{
     border-collapse: collapse;
@@ -76,10 +96,6 @@ body {
     color: white;
 }
 
-#basket td a{
-    text-decoration: none;
-}
-
 
 #name img {
     width: 50px;
@@ -89,6 +105,10 @@ body {
 #name {
     display: flex;
     align-items:center;
+}
+
+#flex {
+    min-width: 70px;
 }
 
 #flex button {
@@ -104,6 +124,18 @@ body {
 
 #remove img {
     width: 28px;
+}
+
+#back {
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 50px;
+    background-color: #F8F8FF;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
 }
 
 .footer {

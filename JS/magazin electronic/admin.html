@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="shortcut icon" href="rk.ico">
+    <script src="admin.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body onload="getProducts();">
+    <div class="container">
+        <div class="header">
+            <a href="home.html">
+                <p>rarekicks</p>
+            </a>
+
+            <div class=rightSide>
+                <a href="basket.html">
+                    <div class="basket">
+                        <span>Basket</span>
+                        <img src="basket.png" />
+                    </div>
+                </a>
+                <a href="admin.html">
+                    <div class="admin">
+                        <img src="admin.png" />
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="alertSuccess hidden">
+            <span class="closebtn" onclick="closeBtn();">&times;</span>
+            <strong id="product"></strong> was saved to your website.
+        </div>
+
+        <div class="alertDelete hidden">
+            <span class="closebtn" onclick="closeBtn();">&times;</span>
+            Product deleted.
+        </div>
+          
+        <div class="main">
+            <div class="title">
+                <h2>Product Management</h2>
+                <button id="add" onclick="addItem1();">+ New product</button>
+                <button onclick="hideForm();" class="hidden" id="cancel">Cancel</button>
+            </div>
+
+            <table id="admin">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Edit / Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <form onsubmit="showDialog();addItem2();editStep2();event.preventDefault();"class="hidden">
+                <label>
+                    <span>Name &nbsp;</span>
+                    <input id="nume" type="text"/>
+                </label>
+                <label>
+                    <span>Picture</span>
+                    <input id="picture" type="text"/>
+                </label>
+                <label>
+                    <span>Price &nbsp;&nbsp;</span>
+                    <input id="price"  type="text"/>
+                </label>
+                <label>
+                    <span>Stock &nbsp;</span>
+                    <input id="stock" type="text"/>
+                </label>
+                <input id="submit" type="submit" value="Save"/>
+            </form>
+            <div class="loader hidden"></div>
+        </div>
+
+        <div class="footer">
+            <span>About us</span>
+            <span>Payment & Shipping</span>
+            <span>Privacy Policy</span>
+            <span>Terms & Conditions</span>
+            <span>Return Policy</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -6,17 +6,8 @@ body {
 }
 
 .hidden {
-    display: none !important;
+    display: none;
 }
-
-.loader{
-    position: absolute;
-    top:150px;
-    bottom:0;
-    left:0;
-    right:220px;
-}
-
 
 .header {
     height: 25px;
@@ -80,9 +71,9 @@ body {
     color: white;
   }
 
-.alertFailure {
+.alertDelete {
     padding: 15px;
-    background-color: #f44336;
+    background-color: #008C45;
     color: white;
   }
 
@@ -101,95 +92,25 @@ body {
     color: black;
   }
 
-.tabs {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 400px;
-}
-
-.tabs button {
-    width: 170px;
-    height: 30px;
-    padding: 5px;
-    font-size: 17px;
-    background-color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin: 10px 10px 10px 0;
-}
-
-.tabs button img {
-    width: 22px;
-    padding-right: 5px;
-    position: relative;
-    top: 3px;
-}
-
-.buttonActive {
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
 .main {
+    min-height: 600px;
     margin: 0 auto;
     max-width: 700px;
-    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 50px;
-}
-
-@media (max-width: 600px) {
-	.main {
-		display: flex;
-        flex-direction: column;
-        border: none;
-	}
-    .main img {
-        width: 200px !important;
-        margin-top: 50px !important;
-    }
-}
-
-.main img {
-    width: 400px;
-    margin: 10px;
-}
-
-.details {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-.details > * {
-    padding: 3px;
-}
-
-#name{
-    margin-bottom: 0;
-}
-
-#price {
-    width: 80%;
-    font-weight: 600;
-    margin-bottom: 40px;
 }
 
 
-#stock {
-    font-size: 18px;
-}
-
-#quantity {
-    width: 36px;
-}
-
-#buy {
-    width: 60px;
+#add {
+    width: 100px;
     height: 30px;
     padding: 5px;
     background-color: #008C45;
@@ -200,35 +121,90 @@ body {
     margin: 10px 10px 10px 5px;
 }
 
-#buy:hover {
-    color: black;
-  }
-
-#back {
-    width: 60px;
+#cancel {
+    width: 100px;
     height: 30px;
     padding: 5px;
-    background-color: #F8F8FF;
+    background-color: #D2122E;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 10px 10px 5px;
+}
+
+
+#admin{
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+#admin td, #basket th {
+    padding: 12px;
+    min-width: 35   px;
+}
+
+#admin tr:nth-child(even){background-color: #f2f2f2;}
+
+#admin tr:hover {background-color: #ddd;}
+
+#admin th {
+    padding: 12px 8px;
+    text-align: left;
+    background-color: #008C45;
+    color: white;
+}
+
+#name img {
+    width: 50px;
+    padding: 5px;
+}
+
+#name {
+    display: flex;
+    align-items:center;
+}
+
+
+#editRemove img {
+    width: 30px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+form {
+    width: 100%;
+}
+
+
+form label {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form input {
+    width: 80%;
+    margin: 5px;
+    height: 35px;
+}
+
+#submit {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    background-color: #008C45;
+    color: white;
     border: 1px solid black;
     border-radius: 2px;
     cursor: pointer;
-    margin: 10px 10px 10px 0;
-}
-
-
-#back a,#back a:hover,#back a:visited,#back a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-.extra { 
-    margin-top: 20px;
-}
+} 
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
-    margin-top: 20px;
     height: 40px;
     width: 100%;
     background-color: #292927;
