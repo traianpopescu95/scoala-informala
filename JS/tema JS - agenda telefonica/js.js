@@ -2,7 +2,7 @@ let contacte = {};
 
 let indexEditare = -1;
 
-let url = "https://agenda-telefonica-2042d-default-rtdb.europe-west1.firebasedatabase.app/";
+let url = "https://agenda-telefonica-b3a93-default-rtdb.europe-west1.firebasedatabase.app/";
 
 async function getContacte() {
     const response = await fetch(url + ".json");

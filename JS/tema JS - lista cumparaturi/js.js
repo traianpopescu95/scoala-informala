@@ -1,6 +1,6 @@
 let iteme = {};
 
-let url = "https://shopping-list-app-dd30c-default-rtdb.europe-west1.firebasedatabase.app/";
+let url = "https://lista-cumparaturi-5a456-default-rtdb.europe-west1.firebasedatabase.app/";
 
 async function getIteme() {
     let response = await fetch(url + ".json")

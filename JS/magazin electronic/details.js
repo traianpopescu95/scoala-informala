@@ -39,7 +39,6 @@ function addToCart() {
     }
     setTimeout(closeBtn2, 3000);
     setTimeout(closeBtn, 3000);
-    console.log(stock, desiredQty, window.localStorage, basketSize);
 }
 
 function closeBtn() {
