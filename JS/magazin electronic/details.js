@@ -1,7 +1,6 @@
 let url = "https://rarekickscom-default-rtdb.europe-west1.firebasedatabase.app/";
 let index = window.location.search.substr(4);
-let stock;
-let basketSize = 0;
+let stock, nume, picture, price;
 
 async function getProduct() {
     document.querySelector(".loader").classList.remove("hidden");
@@ -13,22 +12,37 @@ async function getProduct() {
     document.querySelector("#stock").innerText = product.stock;
     document.querySelector(".loader").classList.add("hidden");
     stock = product.stock;
+    nume = product.name;
+    picture = product.picture;
+    price = product.price;
 }
 
 let desiredQty = 0;
 
 
-function addToCart() {
+async function addToCart() {
     desiredQty = document.querySelector("#quantity").value;
     if (desiredQty !== "") {
         if (stock >= desiredQty) {
-
             if (window.localStorage[index] == undefined) {
                 localStorage.setItem(index, desiredQty);
             }
             else { window.localStorage[index] = Number(window.localStorage[index]) + Number(desiredQty); }
 
             stock = stock - desiredQty;
+
+            let newObject = {
+                "name": nume,
+                "picture": picture,
+                "price": price,
+                "stock": stock
+            }
+
+            await fetch(url + index + ".json", {
+                method: "PUT",
+                body: JSON.stringify(newObject),
+                headers: { "Content-Type": "application/json" }
+            });
 
             document.querySelector(".alertSuccess").classList.remove("hidden");
             document.querySelector("#product").innerText = document.querySelector("#name").innerText;
@@ -37,6 +51,7 @@ function addToCart() {
             document.querySelector(".alertFailure").classList.remove("hidden");
         }
     }
+    getProduct()
     setTimeout(closeBtn2, 3000);
     setTimeout(closeBtn, 3000);
 }
