@@ -101,6 +101,7 @@ body {
     color: black;
   }
 
+
 .tabs {
     margin: 0 auto;
     padding-top: 20px;
@@ -204,6 +205,10 @@ body {
     color: black;
   }
 
+#buy:active{
+    transform: translateY(3px);
+}
+
 #back {
     width: 60px;
     height: 30px;
@@ -213,6 +218,9 @@ body {
     border-radius: 2px;
     cursor: pointer;
     margin: 10px 10px 10px 0;
+}
+#back:active{
+    transform: translateY(3px);
 }
 
 

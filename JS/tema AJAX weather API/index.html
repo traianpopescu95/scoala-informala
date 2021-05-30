@@ -9,14 +9,14 @@
 
 <body>
     <div class="container">
-
+        
         <div class="search">
-            <input type="text" />
+            <input type="text" placeholder="Your current location"/>
             <button onclick="getWeatherNow();">Show Weather Now</button>
             <button onclick="getForecast();">Show Forecast</button>
         </div>
 
-        <div class="now">
+        <div class="now hidden">
             <h4>Weather Now</h4>
             <div class="detailsContainer">
                 <div class="now">
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="forecast">
+        <div class="forecast hidden">
             <h4>5 Days Forecast</h4>
             <div class="forecastContainer">
                 <div class="header">

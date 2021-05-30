@@ -3,6 +3,11 @@ let urlImg = "http://openweathermap.org/img/w/";
 let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?appid=69518b1f8f16c35f8705550dc4161056&units=metric&q=";
 
 async function getWeatherNow() {
+    if(document.querySelector("input").value === "") {
+        return;
+    }
+    document.querySelector(".now").classList.remove("hidden");
+
     let oras = document.querySelector("input").value;
     let response = await fetch(urlNow + oras);
     let json = await response.json();
@@ -21,6 +26,11 @@ async function getWeatherNow() {
 
 
 async function getForecast() {
+    if(document.querySelector("input").value === "") {
+        return;
+    }
+    document.querySelector(".forecast").classList.remove("hidden");
+
     let oras = document.querySelector("input").value;
     let response = await fetch(urlForecast + oras);
     let json = await response.json();
@@ -30,15 +40,15 @@ async function getForecast() {
     let currentDate = new Date(list[0].dt_txt);
     let currentDay = currentDate.toString().substr(0, 10);
     let currentHour = currentDate.getHours();
-    console.log(currentDay);
     let freeSpaces = currentHour/3-1;
+    console.log(currentDay);
 
 
-    document.querySelector("#first").innerText = currentDay;
-    document.querySelector("#second").innerText = `${currentDay.substr(0,7)} ${Number(currentDay.substr(8,10))+1}`;
-    document.querySelector("#third").innerText = `${currentDay.substr(0,7)} ${Number(currentDay.substr(8,10))+2}`;
-    document.querySelector("#forth").innerText = `${currentDay.substr(0,7)} ${Number(currentDay.substr(8,10))+3}`;
-    document.querySelector("#fifth").innerText = `${currentDay.substr(0,7)} ${Number(currentDay.substr(8,10))+4}`;
+    document.querySelector("#first").innerText = currentDay.substr(4,7);
+    document.querySelector("#second").innerText = `${currentDay.substr(4,4)} ${Number(currentDay.substr(8,10))+1}`;
+    document.querySelector("#third").innerText = `${currentDay.substr(4,4)} ${Number(currentDay.substr(8,10))+2}`;
+    document.querySelector("#forth").innerText = `${currentDay.substr(4,4)} ${Number(currentDay.substr(8,10))+3}`;
+    document.querySelector("#fifth").innerText = `${currentDay.substr(4,4)} ${Number(currentDay.substr(8,10))+4}`;
 
 
     for(let i=0;i<freeSpaces;i++) {

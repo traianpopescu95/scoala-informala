@@ -7,6 +7,14 @@
     border-radius: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
+.redText {
+    color: red;
+}
+
 .search {
     display: flex;
     justify-content: space-evenly;
@@ -16,14 +24,24 @@
     width: 700px;
     height: 25px;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .search button {
-    background-color: #191970;
+    background-color: #1e1e7e;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
+.search button:hover{
+    background-color: #131368;
+}
+
+.search button:active {
+    transform: translateY(2px);
+  }
+
 .detailsContainer {
     border-top: 1px solid black;
     display: flex;
@@ -39,6 +57,10 @@
     width: 500px;
     padding: 10px;
     margin: 10px;
+  }
+
+  .mapouter{
+      padding: 10px 10px 0 0;
   }
   
 

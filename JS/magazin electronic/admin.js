@@ -46,7 +46,7 @@ function addItem1() {
 }
 
 async function addItem2() {
-    if(index !== -1) {
+    if (index !== -1) {
         return;
     }
     let nume = document.querySelector("#nume").value;
@@ -93,7 +93,7 @@ function editStep1(idx) {
 }
 
 async function editStep2() {
-    if(index === -1) {
+    if (index === -1) {
         return;
     }
     let newName = document.querySelector("#nume").value;
